@@ -1,0 +1,11 @@
+version: "2.2.1"
+
+services:
+  csvserver:
+    volumes:
+        - C:/Users/91987/Desktop/csvserver/solution/inputFile:/csvserver/inputdata
+    ports:
+        - "9393:9300"
+    image: infracloudio/csvserver
+    environment:
+        - CSVSERVER_BORDER=Orange
