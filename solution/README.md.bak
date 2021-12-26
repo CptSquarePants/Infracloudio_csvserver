@@ -67,24 +67,3 @@ Index	Value
 8	    898
 9	    287
 ------------------------------------------------------------------------------------------
-
-Instructions [Part II]
-1. Create a docker-compose.yaml file for the setup from part I.
-------------------------------------------------------------------------------------------
-version: "2.2.1"
-
-services:
-  csvserver:
-    volumes:
-        - C:/Users/91987/Desktop/csvserver/solution/inputFile:/csvserver/inputdata
-    ports:
-        - "9393:9300"
-    image: infracloudio/csvserver
-    environment:
-        - CSVSERVER_BORDER=Orange
-------------------------------------------------------------------------------------------
-
-2. One should be able to run the application with docker-compose up
-------------------------------------------------------------------------------------------
-docker-compose up -d
-------------------------------------------------------------------------------------------
